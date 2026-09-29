@@ -1,0 +1,11 @@
+title: File integrity change detected
+status: experimental
+description: Files changed, added or deleted since baseline
+logsource:
+    category: file_event
+detection:
+    selection:
+        TargetFilename|contains:
+            - "./test_folder"
+    condition: selection
+level: high
